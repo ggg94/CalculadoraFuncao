@@ -228,18 +228,28 @@ public class Calculadora extends javax.swing.JFrame {
             
             if (a == 0 && b == 0) {
                 txt1.setText("A = 0 e B = 0 → A reta é igual ao eixo X");
+                txt2.setText("");
+                txt3.setText("");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aZbZ.png")));
             }
             
             if (a == 0 && b > 0) {
                 txt1.setText("A = 0 → A reta é uma constante paralela ao eixo X");
                 txt2.setText("B > 0 → A constante está acima do eixo X");
+                txt3.setText("");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aZbP.png")));
             }
             
             if (a == 0 && b < 0) {
                 txt1.setText("A = 0 → A reta é uma constante paralela ao eixo X");
                 txt2.setText("B > 0 → A constante está abaixo do eixo X");
+                txt3.setText("");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aZbN.png")));
             }
             
@@ -247,6 +257,8 @@ public class Calculadora extends javax.swing.JFrame {
                 txt1.setText("A > 0 → A reta é crescente");
                 txt2.setText("B = 0 → A reta cruza os eixos X e Y no mesmo ponto");
                 txt3.setText("Raiz da função ("+xZero+",0.0)");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aPbZ.png")));
             }
             
@@ -254,6 +266,8 @@ public class Calculadora extends javax.swing.JFrame {
                 txt1.setText("A > 0 → A reta é crescente");
                 txt2.setText("B > 0 → A reta cruza o eixo Y acima do eixo X");
                 txt3.setText("Raiz da função ("+xZero+",0.0)");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aPbP.png")));
             }
             
@@ -261,6 +275,8 @@ public class Calculadora extends javax.swing.JFrame {
                 txt1.setText("A > 0 → A reta é crescente");
                 txt2.setText("B < 0 → A reta cruza o eixo Y abaixo do eixo X");
                 txt3.setText("Raiz da função ("+xZero+",0.0)");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aPbN.png")));
             }
             
@@ -268,6 +284,8 @@ public class Calculadora extends javax.swing.JFrame {
                 txt1.setText("A < 0 → A reta é decrescente");
                 txt2.setText("B = 0 → A reta cruza os eixos X e Y no mesmo ponto");
                 txt3.setText("Raiz da função ("+xZero+",0.0)");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aNbZ.png")));
             }
             
@@ -275,6 +293,8 @@ public class Calculadora extends javax.swing.JFrame {
                 txt1.setText("A < 0 → A reta é decrescente");
                 txt2.setText("B > 0 → A reta cruza o eixo Y acima do eixo X");
                 txt3.setText("Raiz da função ("+xZero+",0.0)");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aNbP.png")));
             }
             
@@ -282,6 +302,8 @@ public class Calculadora extends javax.swing.JFrame {
                 txt1.setText("A < 0 → A reta é decrescente");
                 txt2.setText("B < 0 → A reta cruza o eixo Y abaixo do eixo X");
                 txt3.setText("Raiz da função ("+xZero+",0.0)");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/aNbN.png")));
             }
         }
@@ -296,6 +318,10 @@ public class Calculadora extends javax.swing.JFrame {
                     
             if (a == 0) {
                 txt1.setText("A não pode ser igual à zero");
+                txt2.setText("");
+                txt3.setText("");
+                txt4.setText("");
+                txt5.setText("");
                 imgFuncao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/padrão.png")));
             }
             else {
